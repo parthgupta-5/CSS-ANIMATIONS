@@ -1,0 +1,59 @@
+ body {
+      display: grid;
+      place-items: center;
+      gap: 15px;
+      height: 100vh;
+      background-color: whitesmoke;
+      font-family: sans-serif;
+    }
+
+    .btn {
+      background-color: blue;
+      width: 120px;
+      height: 60px;
+      color: ghostwhite;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 1s ease, background-color 1s ease;
+    }
+
+    .btn:hover {
+      background-color: orange;
+    }
+
+    /* Transform variations */
+    .translate:hover {
+      transform: translate(40px, 70px);
+    }
+
+    .scale:hover {
+      transform: scale(1.5);
+    }
+
+    .rotate:hover {
+      transform: rotate(180deg);
+    }
+
+    .skew:hover {
+      transform: skew(20deg, 10deg);
+    }
+
+    .combo:hover {
+      transform: skew(20deg, 20deg) scale(1.5) rotate(100deg);
+    }
+
+    .origin:hover {
+      transform-origin: left;
+      transform: rotate(50deg);
+    }
+
+    /* 3D needs perspective */
+    .threed {
+      perspective: 600px; /* parent perspective */
+    }
+
+    .threed:hover {
+      transform: rotateY(180deg);
+    }
